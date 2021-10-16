@@ -64,6 +64,18 @@ class StringCalculatorShould {
 		}
 	}
 	
+// Exception message should have negative number
+	@Test
+	public void shouldHaveNegativeNumbersInException() {
+		try{
+			Calculator.add("-1,-2,3");
+			fail("Exception expected");
+		}catch(RuntimeException e) {
+			assertEquals("negatives not allowed: -1, -2",e.getMessage());
+		}
+	}
+	
+	
 	
     
     
