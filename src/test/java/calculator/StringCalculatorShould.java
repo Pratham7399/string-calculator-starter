@@ -17,4 +17,24 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
+    
+ // for single string it will return same string
+ 	@Test
+ 	public void shouldReturnNumberOnSingleString() {
+ 		assertEquals(1, Calculator.add("1"));
+ 	}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
