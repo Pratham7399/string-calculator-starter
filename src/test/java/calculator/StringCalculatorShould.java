@@ -42,6 +42,11 @@ class StringCalculatorShould {
 		assertEquals(6,Calculator.add("1\n2,3"));
 	}
     
+//	 Allowingstom delimiter by checking // in beginning of first line
+	@Test
+	public void shouldAllowCustomDelimiter() {
+		assertEquals(3,Calculator.add("//;\n1;2"));
+	}
     
     
     
