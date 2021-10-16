@@ -36,6 +36,14 @@ class StringCalculatorShould {
 		assertEquals(6,Calculator.add("1,2,3"));
 	}
 	
+// 	Checking normal funtioning of fuction add
+	@Test
+	public void addtheNumbers() {
+		assertEquals(999,Calculator.add("333,333,333"));
+	}
+	
+	
+	
 //Allow the Add method to handle new lines between numbers (instead of commas) Allow \n as delimiter along-with comma
 	@Test
 	public void shouldAllowNewLineAsDelimiter() {
@@ -74,6 +82,7 @@ class StringCalculatorShould {
 			assertEquals("negatives not allowed: -1, -2",e.getMessage());
 		}
 	}
+	
 	
 	
 	
