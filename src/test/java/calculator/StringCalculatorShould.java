@@ -83,7 +83,11 @@ class StringCalculatorShould {
 		}
 	}
 	
-	
+
+	@Test
+	public void addingVeryLargeNumber() {
+		assertEquals(300000,Calculator.add("100000,100000,100000"));
+	}
 	
 	
     
