@@ -35,6 +35,12 @@ class StringCalculatorShould {
 	public void shouldReturnSumOfAllNumbers() {
 		assertEquals(6,Calculator.add("1,2,3"));
 	}
+	
+//Allow the Add method to handle new lines between numbers (instead of commas) Allow \n as delimiter along-with comma
+	@Test
+	public void shouldAllowNewLineAsDelimiter() {
+		assertEquals(6,Calculator.add("1\n2,3"));
+	}
     
     
     
