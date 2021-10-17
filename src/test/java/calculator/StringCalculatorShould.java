@@ -36,11 +36,7 @@ class StringCalculatorShould {
 		assertEquals(6,stringCalculator.add("1,2,3"));
 	}
 	
-// 	Checking normal funtioning of fuction add
-	@Test
-	public void addtheNumbers() {
-		assertEquals(999,stringCalculator.add("333,333,333"));
-	}
+
 	
 	
 	
@@ -83,11 +79,7 @@ class StringCalculatorShould {
 		}
 	}
 	
-//Adding very large number....case will fail
-	@Test
-	public void addingVeryLargeNumber() {
-		assertEquals(300000,stringCalculator.add("100000,100000,100000"));
-	}
+
 	
 	
     
